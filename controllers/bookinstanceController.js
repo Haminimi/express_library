@@ -141,3 +141,92 @@ exports.bookinstance_delete_post = asyncHandler(async (req, res, next) => {
 		res.redirect('/catalog/bookinstances');
 	}
 });
+
+// Display BookInstance update form on GET.
+exports.bookinstance_update_get = asyncHandler(async (req, res, next) => {
+	const [bookInstance, allBooks] = await Promise.all([
+		BookInstance.findById(req.params.id).exec(),
+		Book.find({}, 'title').sort({ title: 1 }).exec(),
+	]);
+	const books = await Book.find({}, 'title').sort({ title: 1 }).exec();
+	res.render('bookinstance_form', {
+		title: 'Update Book Instance',
+		books: allBooks,
+		book_instance: bookInstance,
+	});
+});
+
+// Handle bookinstance update on POST.
+exports.bookinstance_update_post = [
+	// Validate and sanitize fields.
+	body('book', 'Book must be specified.')
+		.trim()
+		.isLength({ min: 1 })
+		.escape(),
+	body('imprint', 'Imprint must be specified.')
+		.trim()
+		.isLength({ min: 1 })
+		.escape(),
+	body('status').escape(),
+	body('due_back', 'Invalid due back date.').custom((value, { req }) => {
+		const status = req.body.status;
+		if (status === 'Available' && value) {
+			throw new Error(
+				'Due back date should not be provided when the book is available.'
+			);
+		}
+
+		if (status !== 'Available' && !value) {
+			throw new Error(
+				'Due back date is required when the book is not available.'
+			);
+		}
+
+		// Check if the due_back date is provided and is a valid ISO8601 date
+		if (value && !Date.parse(value)) {
+			throw new Error('Invalid due back date.');
+		}
+
+		return true;
+	}),
+
+	// Process request after validation and sanitization.
+	asyncHandler(async (req, res, next) => {
+		// Extract the validation errors from a request.
+		const errors = validationResult(req);
+
+		// Create a BookInstance object with escaped and trimmed data.
+		const bookInstance = new BookInstance({
+			book: req.body.book,
+			imprint: req.body.imprint,
+			status: req.body.status,
+			due_back: req.body.due_back,
+			_id: req.params.id, // This is required, or a new ID will be assigned!
+		});
+
+		if (!errors.isEmpty()) {
+			// There are errors. Render form again with sanitized values/error messages.
+
+			// Get all books for form.
+			const books = await Book.find({}, 'title')
+				.sort({ title: 1 })
+				.exec();
+			console.log(books);
+
+			res.render('bookinstance_form', {
+				title: 'Create Book Instance',
+				books: books,
+				book_instance: bookInstance,
+				errors: errors.array(),
+			});
+		} else {
+			// Data from form is valid. Update book.
+			const updatedBookInstance = await BookInstance.findByIdAndUpdate(
+				req.params.id,
+				bookInstance,
+				{}
+			);
+			res.redirect(updatedBookInstance.url);
+		}
+	}),
+];
