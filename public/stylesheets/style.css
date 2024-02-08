@@ -77,3 +77,49 @@ a:hover {
 .container {
 	padding-top: 15px;
 }
+
+.sidebar-nav {
+	margin-top: 20px;
+	padding: 20px;
+	border-radius: 5px;
+	font-size: 18px;
+	list-style: none;
+	background-color: var(--sidebar-color);
+	color: white;
+}
+
+.local-library {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.sidebar-nav > li > a {
+	color: white;
+}
+
+.sidebar-nav > li > hr {
+	border-color: white;
+}
+
+.author-link-sidebar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.devicon-github-original {
+	font-size: 30px;
+}
+
+.github-link-sidebar {
+	color: white;
+	transition: transform 0.15s ease;
+}
+
+.github-link-sidebar:hover {
+	text-decoration: none;
+	transform: scale(1.1) rotate(180deg);
+	color: white;
+}
