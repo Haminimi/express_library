@@ -1,4 +1,4 @@
-# Library
+# Express Library
 ## Description
 A library dashboard where you can create, update, and delete authors, books, book instances, and genres. [The project](https://www.theodinproject.com/lessons/nodejs-express-105-forms-and-deployment) is a part of [The Odin Project](https://www.theodinproject.com/dashboard)'s Node course within [The Odin Project](https://www.theodinproject.com/dashboard)'s curriculum. The Odin Project provides a high quality web development education maintained by an open source community.
 ## Live Preview
@@ -10,7 +10,6 @@ A library dashboard where you can create, update, and delete authors, books, boo
 
 **To Do:**
 - [ ] **Authentication**
-<!-- - [ ] **Multi-word family names and Multi-author books** -->
 - [ ] **Save Favorites**
 - [ ] **UI and Responsive Design**
 - [ ] **Search Bar**
@@ -42,6 +41,7 @@ A library dashboard where you can create, update, and delete authors, books, boo
 - Creating a schema
 ## Reflection
 The project covered and provided a great overview of various backend topics. It was built by following a series of articles on [MDN](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Tutorial_local_library_website).
+<!-- - [ ] **Multi-word family names and Multi-author books** -->
 ## Credits
 - Icon used for the favicon image is one of the [Book icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/book).
 ## Author
