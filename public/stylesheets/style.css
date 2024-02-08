@@ -123,3 +123,9 @@ a:hover {
 	transform: scale(1.1) rotate(180deg);
 	color: white;
 }
+
+.page-title {
+	font-size: 70px;
+	font-weight: bold;
+	color: var(--header-color);
+}
