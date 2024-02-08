@@ -88,9 +88,9 @@ a:hover {
 	color: white;
 }
 
-.local-library {
+.sidebar-library-header {
 	font-weight: bold;
-	font-size: 28px;
+	font-size: 40px;
 }
 
 .sidebar-nav > li > a {
@@ -132,16 +132,19 @@ a:hover {
 
 .home-title {
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	gap: 15px;
 	margin-bottom: 10px;
 	font-weight: bold;
 	font-size: 120px;
 }
 
-.home-icon {
-	font-size: 120px;
-	font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+.welcome {
+	font-size: 55px;
+}
+
+.house-icon {
+	font-size: 90px;
 }
 
 .count-title {
