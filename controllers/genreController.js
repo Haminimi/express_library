@@ -155,7 +155,7 @@ exports.genre_update_post = [
 		// Create a genre object with escaped and trimmed data.
 		const genre = new Genre({
 			name: req.body.name,
-			_id: req.params.id, // This is required, or a new ID will be assigned!
+			_id: req.params.id,
 		});
 
 		if (!errors.isEmpty()) {
