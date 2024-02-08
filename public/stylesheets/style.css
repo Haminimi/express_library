@@ -170,3 +170,14 @@ a:hover {
 	transform: scale(1.1);
 	color: var(--text-color);
 }
+
+.update,
+.delete {
+	display: flex;
+	gap: 10px;
+}
+
+.update-pen,
+.delete-icon {
+	font-size: 22px;
+}
