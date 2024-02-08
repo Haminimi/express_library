@@ -194,7 +194,7 @@ exports.author_update_post = [
 			family_name: req.body.family_name,
 			date_of_birth: req.body.date_of_birth,
 			date_of_death: req.body.date_of_death,
-			_id: req.params.id, // This is required, or a new ID will be assigned!
+			_id: req.params.id,
 		});
 
 		if (!errors.isEmpty()) {
