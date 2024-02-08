@@ -157,7 +157,9 @@ a:hover {
 .built-by {
 	display: flex;
 	justify-content: flex-end;
-	padding-right: 20px;
+	position: fixed;
+	bottom: 0px;
+	right: 20px;
 	font-family: 'Satisfy', cursive;
 }
 
