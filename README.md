@@ -43,7 +43,7 @@ A library dashboard where you can create, update, and delete authors, books, boo
 ## Reflection
 The project covered and provided a great overview of various backend topics. It was built by following a series of articles on [MDN](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Tutorial_local_library_website).
 ## Credits
-<!-- - Icon used for the favicon image is one of the [Email icons created by Pixel perfect - Flaticon](https://www.flaticon.com/free-icons/email). -->
+- Icon used for the favicon image is one of the [Book icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/book).
 ## Author
 - [GitHub](https://github.com/Haminimi)
 - [Exercism](https://exercism.org/profiles/Haminimi)
