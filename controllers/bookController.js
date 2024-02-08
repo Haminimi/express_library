@@ -23,7 +23,7 @@ exports.index = asyncHandler(async (req, res, next) => {
 	]);
 
 	res.render('index', {
-		title: 'Local Library Home',
+		title: 'Home',
 		book_count: numBooks,
 		book_instance_count: numBookInstances,
 		book_instance_available_count: numAvailableBookInstances,
@@ -263,7 +263,7 @@ exports.book_update_post = [
 			summary: req.body.summary,
 			isbn: req.body.isbn,
 			genre: typeof req.body.genre === 'undefined' ? [] : req.body.genre,
-			_id: req.params.id, // This is required, or a new ID will be assigned!
+			_id: req.params.id,
 		});
 
 		if (!errors.isEmpty()) {
