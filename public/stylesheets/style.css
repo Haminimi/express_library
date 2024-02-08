@@ -181,3 +181,7 @@ a:hover {
 .delete-icon {
 	font-size: 22px;
 }
+
+.error-list {
+	margin-top: 30px;
+}
