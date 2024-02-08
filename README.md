@@ -1,4 +1,4 @@
-# Express Library
+# Express Library 📖
 ## Description
 A library dashboard where you can create, update, and delete authors, books, book instances, and genres. [The project](https://www.theodinproject.com/lessons/nodejs-express-105-forms-and-deployment) is a part of [The Odin Project](https://www.theodinproject.com/dashboard)'s Node course within [The Odin Project](https://www.theodinproject.com/dashboard)'s curriculum. The Odin Project provides a high quality web development education maintained by an open source community.
 ## Live Preview
