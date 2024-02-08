@@ -18,7 +18,7 @@ A library dashboard where you can create, update, and delete authors, books, boo
 **The project is built with:**
 - Pug
 - Node.js/Express
-- Vanilla CSS
+- Vanilla CSS (and just a bit of Bootstrap)
 
 **Tools**
 - Git
