@@ -2,7 +2,7 @@ extends layout
 
 block content
 
-  h1 ID: #{bookinstance._id}
+  h1.page-title ID: #{bookinstance._id}
 
   p #[strong Title: ]
     a(href=bookinstance.book.url) #{bookinstance.book.title}
@@ -19,7 +19,15 @@ block content
   if bookinstance.status!='Available'
     p #[strong Due back:] #{bookinstance.due_back_formatted}
   hr
-  p
-    a(href=bookinstance.url+'/update') Update book instance
-  p
-    a(href=bookinstance.url+'/delete') Delete book instance
+  div.update
+    a(href=bookinstance.url+'/update') 
+      p
+        | Update book instance 
+    span.material-symbols-outlined.update-pen
+      | edit
+  div.delete
+    a(href=bookinstance.url+'/delete') 
+      p
+        | Delete book instance
+    span.material-symbols-outlined.delete-icon
+      | delete

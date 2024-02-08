@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  h1 Title: #{book.title}
+  h1.page-title Title: #{book.title}
 
   p #[strong Author: ]
     a(href=book.author.url) #{book.author.name}
@@ -34,7 +34,15 @@ block content
       p There are no copies of this book in the library.
       
   hr
-  p
-    a(href=book.url+'/update') Update book
-  p
-    a(href=book.url+'/delete') Delete book
+  div.update
+    a(href=book.url+'/update') 
+      p
+        | Update book 
+    span.material-symbols-outlined.update-pen
+      | edit
+  div.delete
+    a(href=book.url+'/delete') 
+      p
+        | Delete book
+    span.material-symbols-outlined.update-pen
+      | delete
