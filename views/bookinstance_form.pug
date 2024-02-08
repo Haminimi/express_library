@@ -19,7 +19,7 @@ block content
     div.form-group
       label(for='imprint') Imprint:
       input#imprint.form-control(type='text', placeholder='Publisher and date information' name='imprint' value=(undefined===book_instance ? '' : book_instance.imprint) required)
-    
+    div.form-group
       label(for='status') Status:
       select#status.form-control(name='status' required)
         option(value='') --Please select a status--
@@ -31,10 +31,6 @@ block content
               option(value=status) #{status}
           else
             option(value=status) #{status}
-    
-    //div.form-group
-      label(for='status') Status:
-      input#status.form-control(type='text', placeholder='Status' name='status' value=(undefined===book_instance ? '' : book_instance.status) required)
     div.form-group
       label(for='due_back') Due back date:
       input#due_back.form-control(type='date' name='due_back' value=(undefined===book_instance ? '' : book_instance.due_back_yyyy_mm_dd) )
