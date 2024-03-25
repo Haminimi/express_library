@@ -2,7 +2,7 @@
 ## Description
 A library dashboard where you can create, update, and delete authors, books, book instances, and genres. [The project](https://www.theodinproject.com/lessons/nodejs-express-105-forms-and-deployment) is a part of [The Odin Project](https://www.theodinproject.com/dashboard)'s Node course within [The Odin Project](https://www.theodinproject.com/dashboard)'s curriculum. The Odin Project provides a high quality web development education maintained by an open source community.
 ## Live Preview
-[The Library](https://haminimi-library.glitch.me/catalog)
+[The Library](https://haminimi-library.glitch.me/catalog).
 ## Main Features
 - **Server Side Routing**
 - **Create, Read, Update and Delete:** The app utilizes all CRUD operations, offering the ability to create, read, update and delete authors, books, book instances, and genres.
@@ -20,8 +20,8 @@ A library dashboard where you can create, update, and delete authors, books, boo
 - Vanilla CSS (and just a bit of Bootstrap)
 
 **Tools**
-- Git
 - Visual Studio Code
+- Git
 ## Covered Topics
 **This section mentions the main topics covered during project work and prior lessons**
 - Web protocol and communication
