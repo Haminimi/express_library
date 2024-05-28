@@ -1,8 +1,7 @@
 # Express Library 📖
 ## Description
 A library dashboard where you can create, update, and delete authors, books, book instances, and genres. [The project](https://www.theodinproject.com/lessons/nodejs-express-105-forms-and-deployment) is a part of [The Odin Project](https://www.theodinproject.com/dashboard)'s Node course within [The Odin Project](https://www.theodinproject.com/dashboard)'s curriculum. The Odin Project provides a high quality web development education maintained by an open source community.
-## Live Preview
-[The Library](https://haminimi-library.glitch.me/catalog).
+## [Live Preview](https://haminimi-library.glitch.me/catalog)
 ## Main Features
 - **Server Side Routing**
 - **Create, Read, Update and Delete:** The app utilizes all CRUD operations, offering the ability to create, read, update and delete authors, books, book instances, and genres.
@@ -44,9 +43,4 @@ The project covered and provided a great overview of various backend topics. It 
 <!-- - [ ] **Multi-word family names and Multi-author books** -->
 ## Credits
 - Icon used for the favicon image is one of the [Book icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/book).
-## Author
-- [GitHub](https://github.com/Haminimi)
-- [Exercism](https://exercism.org/profiles/Haminimi)
-- [LeetCode](https://leetcode.com/Haminimi/)
-- Email: haminimi.dev@gmail.com
 ## Happy coding!
